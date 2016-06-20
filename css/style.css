@@ -10,6 +10,7 @@ font-family: 'Kaushan Script', cursive;
 
 body{
 	background-color: grey;
+  overflow-x: hidden;
 }
 
 section{
