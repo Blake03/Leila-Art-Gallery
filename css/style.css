@@ -1,0 +1,219 @@
+/*--Basic-Elements
+---------------------------------*/
+
+*{
+	color: #fff;
+font-family: 'Kaushan Script', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	background-color: grey;
+}
+
+section{
+  padding-bottom: 10px;
+}
+
+h1{
+	font-size: 35px;
+	padding: 10px;
+}
+
+h2{
+  font-size: 25px;
+  padding: 20px;
+}
+
+a{
+	font-size: 16px;
+}
+
+
+/*--Welcome-Section
+--------------------------------*/
+
+#welcome{
+	background-image: url(http://valuedelta.com/wp-content/uploads/2016/06/leila-hero-image1-1.jpg);
+	height: 100vh;
+background-size: cover;
+
+}
+
+
+.welcome-info{
+	position: relative;
+	display: inline-block;
+	border-style: solid;
+    border-width: 0px;
+    top: 40vh;
+    width: 100%;
+    text-align: center;
+  
+}
+
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+
+/*--Image Gallery
+---------------------------------------*/
+
+#gallery{
+ background-image:
+    radial-gradient(
+      circle farthest-side,
+      #dbb911,
+      #f06d06
+    );}
+
+.wrapper{
+  
+  width: 100%;
+  text-align: center;
+  background-color: ;
+  padding-bottom: ;
+}
+
+.thumb{
+  width: 100%;
+}
+
+
+li{
+  display: inline-block;
+  width: 24%;
+  list-style: none;
+  list-style-type: none;
+ padding: 2px;
+  margin-left: ;
+}
+
+/*--About-Section
+--------------------------------------------*/
+
+#about{
+  background-image: url("http://valuedelta.com/wp-content/uploads/2016/06/10691767_1490646464550373_1897442971_n.jpg");
+  background-position: right top;
+  background-repeat: repeat-x;
+  background-size: 
+}
+
+article{
+  text-align: left;
+ width: 47%;
+ 
+  
+  padding-left: 15px;
+}
+
+figure{
+width: 47%;
+height: 47vh;
+
+  background-color: ;
+
+}
+
+.profile-image{
+
+}
+
+.overlay {
+  width: ;
+  height: ;
+  background: url(http://fonline-reloaded.net/img/overlay.png);
+  padding-bottom: ;
+    padding-top: 10px;
+    margin-bottom: -10px;
+
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, .6);
+  margin-top: ;
+}
+
+/*--Media-Queries
+---------------------------------------------*/
+/*--iPad--*/
+@media only screen and (max-width: 770px){
+   li{
+    width: 32%;
+    padding: 1px;
+   }
+
+
+}
+/*--iPhone--*/
+@media only screen and (max-width: 575px){
+   li{
+    width: 48%;
+    padding: 0;
+   }
+
+
+}
+  
+/*--Show/Hide-Gallery--*/
+
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 1s ease;
+  position: absolute;
+
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  position: relative;
+  transition: 1s ease;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show all';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #fff;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
