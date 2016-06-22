@@ -25,10 +25,15 @@ h1{
 h2{
   font-size: 25px;
   padding: 20px;
+  text-align: center;
 }
 
 a{
 	font-size: 16px;
+}
+
+p{
+  font-size: 20px;
 }
 
 
@@ -94,7 +99,7 @@ background-size: cover;
   width: 100%;
   text-align: center;
   background-color: ;
-  padding-bottom: ;
+
 }
 
 .thumb{
@@ -115,44 +120,29 @@ li{
 --------------------------------------------*/
 
 #about{
-  background-image: url("http://valuedelta.com/wp-content/uploads/2016/06/10691767_1490646464550373_1897442971_n.jpg");
-  background-position: right top;
-  background-repeat: repeat-x;
-  background-size: 
+  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-position:center; right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+
 }
 
 article{
   text-align: left;
- width: 47%;
- 
-  
+  width: 47%;
   padding-left: 15px;
 }
 
-figure{
-width: 47%;
-height: 47vh;
 
-  background-color: ;
 
+.about-content{
+  padding-top: 10%;
+text-align: center;
+padding-bottom: 15%
 }
 
-.profile-image{
 
-}
-
-.overlay {
-  width: ;
-  height: ;
-  background: url(http://fonline-reloaded.net/img/overlay.png);
-  padding-bottom: ;
-    padding-top: 10px;
-    margin-bottom: -10px;
-
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, .6);
-  margin-top: ;
-}
 
 /*--Media-Queries
 ---------------------------------------------*/
@@ -163,6 +153,12 @@ height: 47vh;
     padding: 1px;
    }
 
+#about{
+  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-position:center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 }
 /*--iPhone--*/
@@ -171,6 +167,27 @@ height: 47vh;
     width: 48%;
     padding: 0;
    }
+
+#about{
+  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+article{
+  text-align: center;
+  width: 90%;
+  padding-left: 15px;
+}
+
+
+
+.about-content{
+  padding-top: 15%;
+text-align: center;
+padding-bottom: 15%
+}
 
 
 }
