@@ -1,9 +1,9 @@
 /*--Basic-Elements
----------------------------------*/
+----------------------------------------------------------*/
 
 *{
 	color: #fff;
-font-family: 'Kaushan Script', cursive;
+  font-family: 'Kaushan Script', cursive;
   margin: 0;
   padding: 0;
 }
@@ -38,24 +38,24 @@ p{
 
 
 /*--Welcome-Section
---------------------------------*/
+----------------------------------------------------------*/
 
 #welcome{
 	background-image: url(http://valuedelta.com/wp-content/uploads/2016/06/leila-hero-image1-1.jpg);
 	height: 100vh;
-background-size: cover;
+  background-size: cover;
 
 }
 
 
-.welcome-info{
+#welcome .wrapper{
 	position: relative;
 	display: inline-block;
 	border-style: solid;
-    border-width: 0px;
-    top: 40vh;
-    width: 100%;
-    text-align: center;
+  border-width: 0px;
+  top: 40vh;
+  width: 100%;
+  text-align: center;
   
 }
 
@@ -84,15 +84,23 @@ background-size: cover;
 
 
 /*--Image Gallery
----------------------------------------*/
+----------------------------------------------------------*/
 
 #gallery{
  background-image:
     radial-gradient(
       circle farthest-side,
-      #dbb911,
-      #f06d06
-    );}
+      #dbb911, #f06d06);
+    }
+
+li{
+  display: inline-block;
+  width: 24%;
+  list-style: none;
+  list-style-type: none;
+  padding: 2px;
+  margin-left: ;
+}
 
 .wrapper{
   
@@ -106,95 +114,7 @@ background-size: cover;
   width: 100%;
 }
 
-
-li{
-  display: inline-block;
-  width: 24%;
-  list-style: none;
-  list-style-type: none;
- padding: 2px;
-  margin-left: ;
-}
-
-/*--About-Section
---------------------------------------------*/
-
-#about{
-  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
-  background-position:center; right;
-  background-repeat: no-repeat;
-  background-size: 100%;
-
-
-}
-
-article{
-  text-align: left;
-  width: 47%;
-  padding-left: 15px;
-}
-
-
-
-.about-content{
-  padding-top: 10%;
-text-align: center;
-padding-bottom: 15%
-}
-
-
-
-/*--Media-Queries
----------------------------------------------*/
-/*--iPad--*/
-@media only screen and (max-width: 770px){
-   li{
-    width: 32%;
-    padding: 1px;
-   }
-
-#about{
-  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
-  background-position:center right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-}
-/*--iPhone--*/
-@media only screen and (max-width: 575px){
-   li{
-    width: 48%;
-    padding: 0;
-   }
-
-#about{
-  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-article{
-  text-align: center;
-  width: 90%;
-  padding-left: 15px;
-}
-
-
-
-.about-content{
-  padding-top: 15%;
-text-align: center;
-padding-bottom: 15%
-}
-
-
-}
-  
-/*--Show/Hide-Gallery--*/
-
-
+/*--Show/Hide-Gallery-------------------------------------*/
 
 .read-more-state {
   display: none;
@@ -235,3 +155,76 @@ padding-bottom: 15%
   border: 1px solid #ddd;
   border-radius: .25em;
 }
+
+
+/*--About-Section
+----------------------------------------------------------*/
+
+#about{
+  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-position:center; right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#about .wrapper{
+  padding-top: 10%;
+  text-align: center;
+  padding-bottom: 15%
+}
+
+article{
+  text-align: left;
+  width: 47%;
+  padding-left: 15px;
+}
+
+
+
+/*--Media-Queries
+----------------------------------------------------------*/
+
+/*--iPad-----------------------------------*/
+@media only screen and (max-width: 770px){
+li{
+    width: 32%;
+    padding: 1px;
+   }
+
+#about{
+  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-position:center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+
+/*--iPhone----------------------------------*/
+@media only screen and (max-width: 575px){
+li{
+    width: 48%;
+    padding: 0;
+   }
+
+#about{
+  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .wrapper{
+  padding-top: 15%;
+  text-align: center;
+  padding-bottom: 15%
+}
+
+article{
+  text-align: center;
+  width: 90%;
+  padding-left: 15px;
+}
+
+}
+  
