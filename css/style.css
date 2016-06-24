@@ -34,8 +34,16 @@ a{
 
 p{
   font-size: 20px;
+
 }
 
+i{
+  margin:0px 9px;
+}
+
+#welcome p{
+  padding-top: 10px;
+}
 
 /*--Welcome-Section
 ----------------------------------------------------------*/
@@ -179,7 +187,20 @@ article{
   padding-left: 15px;
 }
 
-
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: url("../images/back-to-top1.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
 
 /*--Media-Queries
 ----------------------------------------------------------*/
@@ -209,6 +230,18 @@ li{
 
 /*--iPhone----------------------------------*/
 @media only screen and (max-width: 575px){
+
+#welcome .wrapper{
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  border-width: 0px;
+  top: 20vh;
+  width: 100%;
+  text-align: center;
+  
+}
+
 li{
     width: 48%;
     padding: 0;
@@ -219,6 +252,7 @@ li{
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 30px;
 }
 
 #about .wrapper{
@@ -232,6 +266,11 @@ article{
   width: 90%;
   padding-left: 15px;
 }
+
+a.back-to-top {
+  right: 5px;
+  bottom: 5px;
+
 
 }
   
