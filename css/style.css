@@ -41,7 +41,7 @@ p{
 ----------------------------------------------------------*/
 
 #welcome{
-	background-image: url(http://valuedelta.com/wp-content/uploads/2016/06/leila-hero-image1-1.jpg);
+	background-image: url("../images/leila-hero-image2.jpg");
 	height: 100vh;
   background-size: cover;
 
@@ -90,7 +90,7 @@ p{
  background-image:
     radial-gradient(
       circle farthest-side,
-      #dbb911, #f06d06);
+      #ff9b16, #e55004);
     }
 
 li{
@@ -161,7 +161,7 @@ li{
 ----------------------------------------------------------*/
 
 #about{
-  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-image: url("../images/desktop-leila-flowers-bg1.jpg");
   background-position:center; right;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -186,13 +186,20 @@ article{
 
 /*--iPad-----------------------------------*/
 @media only screen and (max-width: 770px){
+
+#welcome{
+    background-image: url("../images/ipad-leila-hero-image1.jpg");
+
+}
+
+
 li{
     width: 32%;
     padding: 1px;
    }
 
 #about{
-  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-image: url("../images/ipad-leila-flowers-bg1.jpg");
   background-position:center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,7 +215,7 @@ li{
    }
 
 #about{
-  background-image: url("../images/iPod-leila-flowers-bg4.jpg");
+  background-image: url("../images/iphone-leila-flowers-bg1.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
