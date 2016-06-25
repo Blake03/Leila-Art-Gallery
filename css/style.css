@@ -90,7 +90,9 @@ i{
               border-color 0.3s ease-in;
 }
 
-
+span a{
+  font-size: 30px;
+}
 /*--Image Gallery
 ----------------------------------------------------------*/
 
