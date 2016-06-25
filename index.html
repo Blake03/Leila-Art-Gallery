@@ -23,8 +23,8 @@
 <section id="welcome">
 	<div class="wrapper">
 		<h1>Hello I'm Leila Alexandria.<br>I'm super awesome and beautifull.<h1>
-		<a class="ghost-button-semi-transparent" href="#about">More About Liela</a>
-		<a class="ghost-button-semi-transparent" href="#gallery">Leila's Art Gallery</a><br>
+		<a class="smoothScroll ghost-button-semi-transparent" href="#about">More About Liela</a>
+		<a class="smoothScroll ghost-button-semi-transparent" href="#gallery">Leila's Art Gallery</a><br>
     <p>leila.nutrition@gmail.com</p>
     <span>
       <i class="fa fa-google-plus-square" aria-hidden="true"></i>
@@ -172,6 +172,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="js/lightbox.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+
 <script>
 var amountScrolled = 300;
 
@@ -181,6 +183,13 @@ $(window).scroll(function() {
   } else {
     $('a.back-to-top').fadeOut('slow');
   }
+});
+
+$('a.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 700);
+  return false;
 });
 </script>
 
