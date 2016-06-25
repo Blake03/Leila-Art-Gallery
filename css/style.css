@@ -206,6 +206,11 @@ a.back-to-top {
   border-radius: 30px;
 }
 
+h6 {
+  padding-left: 10px;
+  font-family: play;
+}
+
 /*--Media-Queries
 ----------------------------------------------------------*/
 
