@@ -142,6 +142,7 @@ li{
   -webkit-transition: 1s ease;
           transition: 1s ease;
   position: absolute;
+  display: none;
 
 }
 
@@ -153,6 +154,7 @@ li{
   position: relative;
   -webkit-transition: 1s ease;
           transition: 1s ease;
+  display: inline-block;
 }
 .read-more-state ~ .read-more-trigger:before {
   content: 'Show all';
