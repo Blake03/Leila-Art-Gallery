@@ -186,6 +186,7 @@ li{
   background-position:center; right;
   background-repeat: no-repeat;
   background-size: 100%;
+  min-height: 100vh;
 }
 
 #about .wrapper{
@@ -238,23 +239,40 @@ li{
    }
 
 #about{
-  background-image: url("../images/ipad-leila-flowers-bg1.jpg");
-  background-position:center right;
+  background-image: url("../images/desktop-leila-flowers-bg1.jpg");
+  background-position:center left;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
+#about .wrapper{
+  padding-top: 25%;
+  text-align: center;
+  padding-bottom: 15%;
+  vertical-align: middle;
+
+}
+
+article{
+  text-align: center;
+  width: 70%;
+  padding-left: 15px;
+  vertical-align: middle;
+  margin: 25px;
+
+}
 }
 
 /*--iPhone----------------------------------*/
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 737px){
 
 #welcome .wrapper{
   position: relative;
   display: inline-block;
   border-style: solid;
   border-width: 0px;
-  top: 20vh;
+  top: 15vh;
   width: 100%;
   text-align: center;
   
@@ -271,6 +289,7 @@ li{
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
+  min-height: 100vh;
 }
 
 #about .wrapper{
@@ -282,7 +301,7 @@ li{
 article{
   text-align: center;
   width: 90%;
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 a.back-to-top {

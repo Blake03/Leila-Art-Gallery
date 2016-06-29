@@ -4,16 +4,14 @@
   <title>LeilaAlexandra.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--lightbox-->
-  <link href="css/lightbox.min.css" rel="stylesheet">
-  <!--custom-css-->
-  <link href="css/style.css" rel="stylesheet">
   <!--fonts-->
   <link href='https://fonts.googleapis.com/css?family=Alegreya|Dancing+Script:700|Kaushan+Script|Slabo+27px|Merriweather' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-  <!--jQuery-->
-<script src="js/jquery-3.0.0.min.js"></script>
-  </head>
+  <!--lightbox-->
+  <link  rel="stylesheet" href="css/lightbox.min.css" type="text/css">
+  <!--custom-css-->
+  <link  rel="stylesheet" href="css/style.css" type="text/css">
+</head>
 <body>
   
 <!--start-welcome-section
@@ -162,25 +160,30 @@
   <div class="wrapper">
     <article>
       <h2>More About Leila</h2>
-        <p>I am a self-taught web designer with a passion for learning new things. Back in 2005, I learned how to use WordPress and Photoshop to begin designing and updating websites.</p>
+        <p>bio coming soon Lorem ipsum dolor sit amet, at accumsan maiestatis sit. Congue petentium prodesset mei at, est te autem persecuti conclusionemque, ut ornatus feugait reformidans mel. Etiam dicunt repudiare et quo. Ei pro dictas consulatu, feugiat definitiones pri ut, sea nostro alterum incorrupte et. Ex nam eripuit repudiandae. Inimicus torquatos qui ut, an suas accumsan ullamcorper eos.</p>
 
-        <p>I am skilled in HTML5, CSS3, BootStrap, WordPress, and PhotoShop. I enjoy sharpening my skills and staying current with the latest best practices and technology's being used in web design and mobile app development. Recently, I have started learning more about JavaScript and jQuery. I am also very interested in earning other JS frameworks such as Angular, React, React Native, Ember. Polymer, Node.js, JSON, etc.</p>
+        <p>Hum et regione equidem postulant. Aliquam comprehensam id mei, fuisset suscipit nam et, quo an viderer discere. In iisque constituam cum. Nam et adhuc ridens placerat, omnes aperiri nam eu. Ocurreret dissentiet vis ut, vix illum iusto soluta ei.</p>
     </article>
 
 
   </div><!--wrapper-->
-  <h6>&#169 2016 LeilaAlexandia.com</h6>
+  <h6>&#169 2016 LeilaAlexanda.com</h6>
 </section><!--about-->
 <a href="#" class="back-to-top">Back to Top</a>
 
 <!--end-about-section
 =============================================================================-->
-
-
+<!--jQuery-->
+  <script src="js/jquery-3.0.0.min.js"></script>
 
 <!--fontAwesome-->
-<script src="https://use.fontawesome.com/acc67931bc.js"></script>
+  <script src="https://use.fontawesome.com/acc67931bc.js"></script>
+
+<!--lightbox-->
 <script src="js/lightbox.min.js"></script>
+
+<!--smooth-<script src="js/smoothScroll.js"></script>scroll-->
+
 
 <!--back-to-top-button-->
 <script>
@@ -201,7 +204,32 @@ $('a.back-to-top').click(function() {
   return false;
 });
 </script>
-<!--smooth-scroll-->
-<script src="js/smoothScroll.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 </body>
 	
