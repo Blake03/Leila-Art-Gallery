@@ -18,12 +18,12 @@ section{
 }
 
 h1{
-	font-size: 35px;
+	font-size: 40px;
 	padding: 10px;
 }
 
-h2{
-  font-size: 25px;
+h2, h3{
+  font-size: 30px;
   padding: 20px;
   text-align: center;
 }
@@ -97,7 +97,10 @@ i{
 span a{
   font-size: 30px;
 }
-/*--Image Gallery
+
+
+
+/*--Gallery-Section
 ----------------------------------------------------------*/
 
 
@@ -187,12 +190,13 @@ li{
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 100vh;
+  position: relative;
 }
 
 #about .wrapper{
   padding-top: 10%;
   text-align: center;
-  padding-bottom: 15%
+  padding-bottom: 15%;
 }
 
 article{
@@ -216,9 +220,13 @@ a.back-to-top {
   border-radius: 30px;
 }
 
-h6 {
-  padding-left: 10px;
+h4 {
+  font-size: 10px;
   font-family: play;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
 }
 
 /*--Media-Queries
@@ -259,7 +267,7 @@ article{
   width: 70%;
   padding-left: 15px;
   vertical-align: middle;
-  margin: 25px;
+  
 
 }
 }
@@ -276,6 +284,15 @@ article{
   width: 100%;
   text-align: center;
   
+}
+
+h1{
+  font-size: 30px;
+  padding: 10px;
+}
+
+h2{
+  font-size: 25px;
 }
 
 li{
@@ -300,8 +317,10 @@ li{
 
 article{
   text-align: center;
-  width: 90%;
+  width: auto;
+  margin: 3px;
   padding-left: 0px;
+  font-size: 15px;
 }
 
 a.back-to-top {
