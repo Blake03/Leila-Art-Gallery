@@ -3,7 +3,7 @@
 
 *{
 	color: #fff;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'play';
   margin: 0;
   padding: 0;
 }
@@ -57,10 +57,11 @@ i{
 ----------------------------------------------------------*/
 
 #welcome{
-	background-image: url("../images/leila-hero-image2.jpg");
+	background-image: url("../images/ocean-swing.jpg");
 	height: 100vh;
-  background-size: cover;
-
+  background-position: bottom right;
+    background-repeat: no-repeat;
+background-size: cover;
 }
 
 
@@ -107,6 +108,7 @@ i{
   display: block;
   text-decoration: none;
   font-size: 20px;
+  padding: 7px;
 }
 
 .social-icons a{
@@ -120,18 +122,22 @@ i{
 
 
 #gallery{
- background-image:
-    -webkit-radial-gradient(circle farthest-side, #ff9b16, #e55004);
- background-image:radial-gradient(circle farthest-side,#ff9b16, #e55004);
-}
+ 
+ background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#756d62, #867f7a, #756d62); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#756d62, #867f7a, #756d62); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#756d62, #867f7a, #756d62); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#756d62, #867f7a, #756d62); /* Standard syntax */
+  }
 
 li{
   display: inline-block;
-  width: 24%;
+  width: 20%;
   list-style: none;
   list-style-type: none;
   padding: 2px;
   margin-left: ;
+  padding: 20px;
 }
 
 .wrapper{
@@ -144,6 +150,7 @@ li{
 
 .thumb{
   width: 100%;
+
 }
 
 /*--Show/Hide-Gallery-------------------------------------*/
@@ -192,7 +199,7 @@ li{
   border: 1px solid #ddd;
   border-radius: .25em;
   margin-top: 1em;
-  margin-bottom: .7em;
+  margin-bottom: 1.7em;
 }
 
 
@@ -200,12 +207,13 @@ li{
 ----------------------------------------------------------*/
 
 #about{
-  background-image: url("../images/desktop-leila-flowers-bg1.jpg");
-  background-position:center; right;
+  background-image: url("../images/beach-fence.jpg");
+  background-position:center left: ;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   min-height: 100vh;
   position: relative;
+
 }
 
 #about .wrapper{
@@ -217,7 +225,10 @@ li{
 article{
   text-align: left;
   width: 47%;
-  padding-left: 15px;
+  padding: 15px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
 }
 
 a.back-to-top {
@@ -237,10 +248,25 @@ a.back-to-top {
 
 
 
+@media only screen and (max-width: 872px){
+li{
+    width: 30%;
+    padding: 10px;
+   }
+  
+#welcome{
+  background-position:bottom right;
+background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+}
 /*--Media-Queries
 ----------------------------------------------------------*/
 
-/*--iPad-----------------------------------*/
+/*--iPad----------------------
 @media only screen and (max-width: 770px){
 
 #welcome{
@@ -249,10 +275,7 @@ a.back-to-top {
 }
 
 
-li{
-    width: 32%;
-    padding: 1px;
-   }
+
 
 #about{
   background-image: url("../images/desktop-leila-flowers-bg1.jpg");
@@ -279,7 +302,7 @@ article{
 
 }
 }
-
+-------------*/
 /*--iPhone----------------------------------*/
 @media only screen and (max-width: 737px){
 
@@ -335,11 +358,14 @@ h4{
 
 li{
     width: 48%;
-    padding: 0;
+    padding: 1px;
    }
 
+.read-more-trigger {
+  margin-bottom: 1em;
+}
+
 #about{
-  background-image: url("../images/iphone-leila-flowers-bg1.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
