@@ -373,9 +373,12 @@ h4{
   display: inline-block;
   border-style: solid;
   border-width: 0px;
-  top: 15vh;
+
   width: 100%;
   text-align: center;
+  position: relative;
+  top: 47vh;
+  transform: translateY(-50%);
 }
 
 .sub-heading{
@@ -439,13 +442,18 @@ a.back-to-top {
 /*--iPhone-portrait---------------------------------*/
 @media only screen and (max-width: 420px){
 
+#welcome .wrapper{
+top: 15vh;
+transform: translateY(0%);
+}
+
 h1{
   line-height: 1;
   padding-bottom: 5px;
 }
 
 .heading{
-  font-size: 8.8vw;
+  font-size: 8.6vw;
   line-height: .3;
 
 }
