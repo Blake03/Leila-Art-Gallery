@@ -148,8 +148,8 @@ i{
 ----------------------------------------------------------*/
 
 #welcome{
-    background-image: url("../images/ocean-swing.jpg");
-    height: 100vh;
+  background-image: url("../images/ocean-swing.jpg");
+  height: 100vh;
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,10 +157,8 @@ i{
 
 
 #welcome .wrapper{
-    position: relative;
-    display: inline-block;
-    border-style: solid;
-  border-width: 0px;
+  position: relative;
+  display: block;
   top: 28vh;
   width: 100%;
   text-align: center;
@@ -346,8 +344,6 @@ li{
   
 #welcome{
   background-position:bottom right;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 }
 
@@ -369,24 +365,14 @@ h4{
 }
 
 #welcome .wrapper{
-  position: relative;
   display: inline-block;
-  width: 100%;
-  text-align: center;
-  position: relative;
   top: 46vh;
   transform: translateY(-50%);
 }
 
-
-
 .ghost-button-semi-transparent {
-  display: inline-block;
   width: 175px;
   padding: 2px;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
   margin: 5px;
 }
 
@@ -410,16 +396,11 @@ li{
 
 #about{
   background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 30px;
-  min-height: 100vh;
 }
 
 #about .wrapper{
   padding-top: 5%;
-  text-align: center;
-  padding-bottom: 15%
 }
 
 article{
@@ -460,15 +441,13 @@ h1{
 .ghost-button-semi-transparent {
   display: block;
   width: 45vw;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  margin: 7px auto; 
+  margin: 9px auto; 
 }
 
 .email{
   margin-top: -21px;
   font-size: 3.4vw;
+  padding: 0px 0px 6px 0px;
 }
 
 li{
