@@ -400,6 +400,14 @@ h4{
   margin: 5px;
 }
 
+/*hover/active bug fix for smaller devices*/
+.ghost-button-semi-transparent:hover {
+  color: #bfbcb6;
+  background-color: rgba(255, 255, 255, 0.0);
+  border-color: #bfbcb6;
+  
+}
+
 .email{
   font-size: 15px;
   padding: 5px;
