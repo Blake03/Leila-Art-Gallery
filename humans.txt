@@ -1,12 +1,25 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
 
-# TEAM
 
-    <Blake Sims> -- <creator> -- <blake@edelta.net>
+# DEVELOPER
+
+    Name = Blake Sims
+
+    Website = BlakeSimsDesign.com
+
+    Email = Blake@edelta.net
+
+    Twitter = twitter.com/blakeSims2003
+
+    GitHub = github.com/Blake03
+
+    LinkedIn = linkedIn.com/in/blake-sims-868a2279
 
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5 Boilerplate, jQuery
+
+    Modernizr, Normalize.css, Font Awesome, Lightbox
+
+    SublimeText 2, Git, Photoshop cc
