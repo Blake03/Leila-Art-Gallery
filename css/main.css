@@ -355,6 +355,10 @@ a.back-to-top {
 /*--iPad--------------------------------------------*/
 @media only screen and (max-width: 872px){
 
+#welcome{
+  background-position:bottom right;
+}
+
 .email{
   display: block;
 }
@@ -362,10 +366,6 @@ a.back-to-top {
 li{
     width: 30%;
     padding: 10px;
-   }
-  
-#welcome{
-  background-position:bottom right;
 }
 
 }
