@@ -199,18 +199,27 @@ i{
   text-decoration: none;
   font-size: 20px;
   padding: 7px;
+  transition: all 0.2s ease-out;
+
 }
 
 .email:hover{
   color: #fff;
+  transition: all 0.1s ease-in;
 }
 
 .social-icons a{
   font-size: 30px;
 }
 
+.fa{
+  transition: all 0.2s ease-out;
+
+}
+
 .fa:hover{
   color: #fff;
+  transition: all 0.1s ease-in;
 }
 
 
